@@ -1,0 +1,26 @@
+body {
+    background-color: #f1faee;
+}
+#parent {
+    font-size: 20px;
+}
+#navbar {
+    text-align: center;
+    color: #1d3557;
+}
+#navbar a {
+    color: blue;
+}
+#titleHeading {
+    color: #1d3557;
+    text-align: center;
+    font-size: 2em;
+}
+#quote {
+    color : #1d3557;
+    text-align: center;
+    font-size: 1.1em;
+}
+#loginForm {
+    text-align: center;
+}
