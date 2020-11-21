@@ -1,26 +1,32 @@
 body {
-    background-color: #f1faee;
+    background-color: #fffffc;
 }
 #parent {
     font-size: 20px;
 }
 #navbar {
     text-align: center;
-    color: #1d3557;
+    border: 2px solid;
+    border-color: #22223b;
+    background-color: #22223b;
 }
 #navbar a {
-    color: blue;
+    color: #fca311;
+    padding: 1em;
 }
 #titleHeading {
-    color: #1d3557;
+    color: rgb(16, 16, 231);
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
 }
 #quote {
-    color : #1d3557;
+    color : #0b34ec;
     text-align: center;
     font-size: 1.1em;
+    font-family: 'Kaushan Script', cursive;
 }
 #loginForm {
     text-align: center;
+    border: 2px solid;
 }
