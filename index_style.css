@@ -6,10 +6,13 @@ body {
     font-size: 20px;
 }
 #navbar {
-    text-align: center;
     border: 2px solid;
     border-color: #22223b;
     background-color: #22223b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #navbar a {
     color: #fca311;
@@ -35,4 +38,6 @@ body {
 #loginForm {
     text-align: center;
     border: 2px solid;
+    display: flex;
+    flex-direction: column;
 }
