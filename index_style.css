@@ -27,18 +27,17 @@ body {
     transition: 1s;
 }
 #themeChange {
-    background-color: #fca311;
-    color: black;
+    background-color: #fffffc;
+    color: #03071e;
     display: flex;
     border-radius: 0.5em;
     padding: 0.4em;
 }
-#themeChange:hover {
-    background-color: black;
-    color: #fca311;
+.darkTheme #themeChange {
+    background-color: #03071e;
+    color: #fffffc;
     display: flex;
-    font-size: medium;
-    padding: 0.5em;
+    padding: 0.4em;
 }
 #titleHeading {
     color: rgb(16, 16, 231);
