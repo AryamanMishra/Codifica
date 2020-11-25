@@ -1,6 +1,6 @@
 body {
     /* background-color: #fffffc; */
-    background-image: linear-gradient(90deg, red, yellow);
+    background-image: linear-gradient(90deg, red, rgba(255, 255, 0, 0.795));
 }
 #parent {
     font-size: 20px;
@@ -10,14 +10,16 @@ body {
     border-color: #22223b;
     background-color: #22223b;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 #navbar a {
     color: #fca311;
     padding: 1em;
     transition: 1.25s;
+    font-size: larger;
 }
 #navbar a:hover {
     color: red;
