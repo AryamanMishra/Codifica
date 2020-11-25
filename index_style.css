@@ -1,6 +1,8 @@
 body {
-    /* background-color: #fffffc; */
-    background-image: linear-gradient(90deg, red, rgba(255, 255, 0, 0.795));
+    background-color: #fffffc;
+}
+.darkTheme {
+    background-color: #03071e;
 }
 #parent {
     font-size: 20px;
@@ -18,15 +20,34 @@ body {
 #navbar a {
     color: #fca311;
     padding: 1em;
-    transition: 1.25s;
     font-size: larger;
 }
 #navbar a:hover {
     color: red;
     transition: 1s;
 }
+#themeChange {
+    background-color: #fca311;
+    color: black;
+    display: flex;
+    border-radius: 0.5em;
+    padding: 0.4em;
+}
+#themeChange:hover {
+    background-color: black;
+    color: #fca311;
+    display: flex;
+    font-size: medium;
+    padding: 0.5em;
+}
 #titleHeading {
     color: rgb(16, 16, 231);
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', cursive;
+}
+.darkTheme #titleHeading {
+    color: #fca311;
     text-align: center;
     font-size: 2.5em;
     font-family: 'Bebas Neue', cursive;
