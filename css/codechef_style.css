@@ -13,23 +13,12 @@ body {
     font-family: 'Cabin', sans-serif;
     /* transition: all 1s; */
 }
-#quote {
-    color : #03045e;
-    text-align: center;
-    font-size: 1.2em;
-    font-family: 'Pacifico', cursive;
-}
 
 
 
-
-  /* DARK MODE */
+/* DARK MODE */
   
   
-  [data-theme="dark"] #titleHeading {
-      color: #fca311;
-  }
-  [data-theme="dark"] #quote {
-    color: #57cc99;
+[data-theme="dark"] #titleHeading {
+    color: #fca311;
 }
-    

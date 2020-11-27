@@ -1,0 +1,44 @@
+[data-theme="dark"] {
+    background-color: #03071e !important;
+    color: #eee;
+  }
+  
+  [data-theme="dark"] .bg-light {
+    background-color: #333 !important;
+  }
+  
+  [data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+  }
+  
+  [data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+  }
+  [data-theme="dark"] .navbar .navbar-brand {
+    color: #ffffff;
+}
+[data-theme="dark"] .navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #ffffff80;
+}
+[data-theme="dark"] .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #ffffff;
+}
+[data-theme="dark"] .navbar .collapse .navbar-nav>.active .nav-link  {
+    color: #ffffff;
+}
+[data-theme="dark"] .navbar .collapse .navbar-nav .nav-item .dropdown-menu {
+    background-color: #333333;
+}
+[data-theme="dark"] .navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #ffffff;
+}
+[data-theme="dark"] .navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+[data-theme="dark"] .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.959)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  [data-theme="dark"] .navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.959);
+  }
