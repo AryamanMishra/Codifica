@@ -1,0 +1,11 @@
+.navbar {
+    font-family: 'Audiowide', cursive;
+    font-weight: 550;
+}
+.navbar .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    font-family: 'Audiowide', cursive;
+    font-weight: 505;
+}
+.navbar-brand {
+    font-family: 'Audiowide', cursive;
+}
