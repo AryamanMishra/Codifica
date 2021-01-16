@@ -5,6 +5,7 @@ function onImgClick() {
     if (body.classList.contains('darkTheme')) {
         body.classList.remove('darkTheme')
         localStorage.removeItem('themeChanger','darkTheme')
+        themeC
     }
     else {
         body.classList.add('darkTheme')
