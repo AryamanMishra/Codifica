@@ -1,7 +1,6 @@
 body {
-    /* background-color: #03071e; */
     background-color: #e0fbfc;
-    /* transition: all 1s; */
+    transition: all 1s;
 }
 #parent {
     font-size: 20px;
@@ -12,99 +11,83 @@ body {
     font-size: 2.2em;
     font-family: 'Audiowide', cursive;
     font-weight: 550;
-    /* transition: all 1s; */
-}
-#themeChanger {
-    width: 50px;
-    height: auto;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
+    transition: all 1s;
 }
 
 /* toggle switch starts*/
-*, *:before, *:after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-/* body, input {
-	font-size: 1em;
-	line-height: 1.5;
-}
-body {
-	background: #bbb;
-} */
-input {
-	display: block;
-	margin-bottom: 1.5em;
-}
-main {
-	padding: 1.5em 0 0 0;
-	text-align: center;	
-}
-.l {
-	background-color: rgba(0,0,0,0.7);
-	border-radius: 0.75em;
-	box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.3) inset;
-	color: #fdea7b;
-	display: inline-flex;
-	align-items: center;
-	margin: auto;
-	padding: 0.15em;
-	width: 3em;
-	height: 1.5em;
-	transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-.l:before, .l:after {
+/* The switch - the box around the slider */
+.switch {
+	position: sticky;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	top: 90%;
+	left: 90%;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+  }
+  
+  .slider:before {
+	position: absolute;
 	content: "";
-	display: block;
-}
-.l:before {
-	background-color: #d7d7d7;
-	border-radius: 50%;
-	width: 1.2em;
-	height: 1.2em;
-	transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
-	z-index: 1;
-}
-.l:after {
-	background:
-		linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
-		repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
-		radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+	height: 40px;
+	width: 40px;
+	left: 0px;
+	bottom: 4px;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+	box-shadow: 0 0px 15px #2020203d;
+	background: white url('/images/night.png');
 	background-repeat: no-repeat;
-	border: 0.25em solid transparent;
-	border-left: 0.4em solid #d8d8d8;
-	border-right: 0 solid transparent;
-	transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
-	transform: translateX(-22.5%);
-	transform-origin: 25% 50%;
-	width: 1.2em;
-	height: 1em;
-}
-/* Checked */
-.l:checked {
-	background-color: rgba(0,0,0,0.45);
-	box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
-}
-.l:checked:before {
-	background-color: currentColor;
-	transform: translateX(125%)
-}
-.l:checked:after {
-	border-left-color: currentColor;
-	transform: translateX(-2.5%) rotateY(180deg);
-}
-/* Other States */
-.l:focus {
-	/* Usually an anti-A11Y practice but set to remove an annoyance just for this demo */
-	outline: 0;
-}
+	background-position: center;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(24px);
+	-ms-transform: translateX(24px);
+	transform: translateX(24px);
+	background: white url('/images/sunny.png');
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 50%;
+  }
 /* toggle switch ends */
 
   /* DARK MODE */
