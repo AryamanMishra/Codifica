@@ -31,6 +31,24 @@ body {
 #editor {
   transition: all 1s;
 }
+::placeholder {
+  color: black;
+  transition: all 1s;
+}
+
+@media (min-width : 700px) {
+  #editor {
+    width: 700px;
+    height: 500px;
+  }
+}
+@media (max-width : 700px) {
+  #editor {
+    width: auto;
+    height: 400px;
+  }
+}
+
 
   /* DARK MODE */
   
@@ -53,6 +71,9 @@ body {
   }
   .darkTheme #problemLink {
     background-color: #212529;
+    color: white;
+  }
+  .darkTheme ::placeholder {
     color: white;
   }
   .darkTheme #code {

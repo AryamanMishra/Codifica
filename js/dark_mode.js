@@ -12,6 +12,7 @@ function toggleTheme() {
         navbar.classList.remove('navbar-dark','bg-dark')
         navbar.classList.add('navbar-light','bg-light')
         editor.setTheme("ace/theme/eclipse")
+        localStorage.removeItem("editorTheme","twilight")
     }
     else {
         body.classList.add('darkTheme')
@@ -20,6 +21,7 @@ function toggleTheme() {
         navbar.classList.add('navbar-dark','bg-dark')
         navbar.classList.remove('navbar-light','bg-light')
         editor.setTheme("ace/theme/twilight")
+        localStorage.setItem("editorTheme","twilight")
     }
 } 
 

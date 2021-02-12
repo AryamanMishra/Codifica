@@ -18,8 +18,3 @@ chooseSite.addEventListener('change',function(event){
 //      here, we can use event.target.value and verify the latest entered 
 //      character is according to us or not
 // })
-
-var fname = document.getElementById('fname')
-fname.addEventListener('change',function(event){
-    console.log(event.target.value)
-}) 

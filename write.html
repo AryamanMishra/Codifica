@@ -62,23 +62,20 @@
     <!-- writing form -->
     <center>
     <form id="writeForm" action="">
-        <label for="chooseSite">Website</label>
         <select name="chooseSite" id="chooseSite">
             <option value="default" selected>Choose Website</option>
             <option value="codechef">Codechef</option>
             <option value="codeforces">Codeforces</option>
         </select>
         <br><br>
-        <label for="problemLink">Problem Link</label>
-        <input id="problemLink" name="problemLink" type="text">
+        <input id="problemLink" name="problemLink" type="text" placeholder="Problem Link">
         <br><br>
-        <label for="language">Language</label>
         <select name="language" id="language">
           <option value="default" selected>Choose Language</option>
           <!-- language options to be added -->
         </select>
         <br><br>
-        <div id="editor" style="height: 500px; width: 500px">// Enter Your Code Here</div>
+        <div id="editor">// Enter Your Code Here</div>
         <br><br>
         <label for="editorial">Editorial</label>
         <textarea name="editorial" id="editorial" cols="30" rows="10"></textarea>
@@ -104,6 +101,12 @@
   var editor = ace.edit("editor");
   editor.setTheme("ace/theme/twilight");
   document.getElementById('editor').style.fontSize='0.75em';
+    if (localStorage.getItem("editorTheme") == "twilight") {
+      editor.setTheme("ace/theme/twilight")
+    }
+    else {
+      editor.setTheme("ace/theme/eclipse")
+    }
 </script>
 
 </body>
