@@ -1,0 +1,66 @@
+body {
+    background-color: #e0fbfc;
+    transition: all 1s;
+}
+#parent {
+    font-size: 20px;
+}
+#titleHeading {
+    color: #3d405b;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Audiowide', cursive;
+    font-weight: 550;
+    transition: all 1s;
+}
+#chooseSite {
+  transition: all 1s;
+}
+#language {
+  transition: all 1s;
+}
+#problemLink {
+  transition: all 1s;
+}
+#code {
+  transition: all 1s;
+}
+#editorial {
+  transition: all 1s;
+}
+#editor {
+  transition: all 1s;
+}
+
+  /* DARK MODE */
+  
+  .darkTheme {
+	  background-color: #101720;
+  }
+  .darkTheme #titleHeading {
+	  color: #ee6c4d;
+  }
+  .darkTheme label {
+    color: white;
+  }
+  .darkTheme #chooseSite {
+    background-color: #212529;
+    color: white;
+  }
+  .darkTheme #language {
+    background-color: #212529;
+    color: white;
+  }
+  .darkTheme #problemLink {
+    background-color: #212529;
+    color: white;
+  }
+  .darkTheme #code {
+    background-color: #212529;
+    color: white;
+  }
+  .darkTheme #editorial {
+    background-color: #212529;
+    color: white;
+  }
+  

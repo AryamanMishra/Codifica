@@ -1,6 +1,7 @@
 var body = document.querySelector('body')
 var icon = document.getElementById('themeChanger')
 var navbar = document.querySelector('nav')
+var editor = document.getElementById('editor')
 
 // this function gets called on every click on the moon/sun icon
 function toggleTheme() {
@@ -10,6 +11,7 @@ function toggleTheme() {
         localStorage.removeItem('theme','darkTheme')
         navbar.classList.remove('navbar-dark','bg-dark')
         navbar.classList.add('navbar-light','bg-light')
+        editor.setTheme("ace/theme/eclipse")
     }
     else {
         body.classList.add('darkTheme')
@@ -17,6 +19,7 @@ function toggleTheme() {
         localStorage.setItem('theme','darkTheme')
         navbar.classList.add('navbar-dark','bg-dark')
         navbar.classList.remove('navbar-light','bg-light')
+        editor.setTheme("ace/theme/twilight")
     }
 } 
 

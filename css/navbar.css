@@ -11,15 +11,6 @@
     font-family: 'Audiowide', cursive;
 }
 
-@media (min-width: 900px) {
-    .navbar-brand.abs
-        {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            text-align: center;
-        }
-    }
 
 /* Dropdown Dark Mode */
 .darkTheme .navbar .collapse .navbar-nav .nav-item .dropdown-menu {
